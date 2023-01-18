@@ -12,7 +12,7 @@ import pickle
 app = Flask(__name__, template_folder = 'template')
 
 #Open our model 
-model = pickle.load(open('Kmeans.pkl','rb'))
+model = pickle.load(open('randomForest.pkl','rb'))
 
 #create our "home" route using the "housingprice.html" page
 @app.route('/')
